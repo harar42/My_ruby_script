@@ -7,28 +7,11 @@ extract = []
 array.each do |number|
 File.open("1516_liste_eleves_avec_mail.csv_20160331-155516.csv_20160331-160740.csv").each do |line|
 
-	# print line
-	# num_check = 0
+	
 	 
 	 if line.include? number.to_s
-		# extract.each do |check_line|
-			
-		# 	print check_line
-		# 	print "    "
-		# 	print line.strip
-		# 	print "    "
-		# 	if check_line == line.strip
-		# 		num_check = 1
-		# 		if num_check = 0
-	 # 			extract.push(line.strip)
-	 # 		end
-	 # 			puts "tt"
-	 # 		end
-	 # 		puts 5
-	 # 	end
-	 # if !extract.include? "allo"
 	 extract.push(line.strip)
-	 # end
+	
 	end
 	
 end
